@@ -4,3 +4,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 # Link
 Live URL : [Click here](https://23317fe7.frontend-mentor-challenge5-profilecard.pages.dev/)
+
+
+KEEP CODING :)
