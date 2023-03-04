@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* After doing this, 1rem=10px */
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+
+body {
+    font-size: 1.5rem;
+    background-color: var(--Very-Light-Gray);
+    position: relative;
+}
+
+p {
+    color: var(--Grayish-Blue);
+}
+
+footer.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+}
+
+header {
+    text-align: center;
+}
+
+header p {
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+header h1 {
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: var(--Very-Dark-Blue);
+}
+
+header h2 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: var(--Very-Dark-Blue);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 6rem;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: .7rem;
+    padding: 3rem;
+    text-align: right;
+    -webkit-box-shadow: -3px 12px 22px -11px rgba(84, 158, 242, 0.6);
+    -moz-box-shadow: -3px 12px 22px -11px rgba(84, 158, 242, 0.6);
+    box-shadow: -3px 12px 22px -11px rgba(84, 158, 242, 0.6);
+}
+
+.card__text {
+    text-align: left;
+    padding-bottom: 1.6rem;
+}
+
+.card1 {
+    border-top: .4rem solid var(--Cyan);
+}
+
+.card2 {
+    border-top: .4rem solid var(--Red);
+}
+
+.card3 {
+    border-top: .4rem solid var(--Orange);
+}
+
+.card4 {
+    border-top: .4rem solid var(--Blue);
+}
+
+.card__text h5 {
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+
+.card__mid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.card1,
+.card4 {
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+      font-size: 13px;
+    }
+  
+    header h1 {
+      font-size: 22px;
+    }
+  
+    header h2 {
+      font-size: 22px;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  
+    .card__text {
+      padding-bottom: 30px;
+    }
+  }

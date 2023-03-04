@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+
+body{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+.wrapper{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card{
+    padding: 4rem;    
+}
+
+.card1{
+    background-color: var(--Bright-orange);
+}
+.card2{
+    background-color: var(--Dark-cyan);
+}
+.card3{
+    background-color: var(--Very-dark-cyan);
+}
+.card h2{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: var(--Very-light-gray-background-headings-buttons);
+    margin-bottom: 2rem;
+    margin-top: 1.3rem;
+    font-size: 30px;
+}
+.card p{
+    color: var(--Transparent-white-paragraphs);
+    line-height: 1.6;
+    letter-spacing: .789px;
+    margin-bottom: 8rem;
+}
+.card a{
+    text-decoration: none;
+    padding: 13px 27px;
+    border-radius: 25px;
+    display: inline-block;
+    border: 2px solid var(--Transparent-white-paragraphs);
+    transition: all .4s ease-in-out;
+}
+
+.card1 a{
+    color: var(--Bright-orange);
+    background: var(--Very-light-gray-background-headings-buttons);
+}
+.card2 a{
+    color: var(--Dark-cyan);
+    background: var(--Very-light-gray-background-headings-buttons);
+}
+.card3 a{
+    color: var(--Very-dark-cyan);
+    background: var(--Very-light-gray-background-headings-buttons);
+}
+
+.card1 a:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Transparent-white-paragraphs);
+}
+.card2 a:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Transparent-white-paragraphs);
+}
+.card3 a:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Transparent-white-paragraphs);
+}
+
+@media only screen and (max-width:768px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 2rem;
+    }
+    .card p{
+        margin-bottom: 40px;
+    }
+}
