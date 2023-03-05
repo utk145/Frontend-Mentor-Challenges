@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* After doing this, 1rem=10px */
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+}
+
+main {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: 0 2rem;
+}
+
+nav img {
+    width: 19rem;
+    margin-bottom: 4rem;
+}
+
+nav {
+    margin-bottom: 4rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero__right__text h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.hero__right__text p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    opacity: .6;
+}
+
+.hero__right__text a {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 1.3rem 5rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 .8rem 1.7rem -.8rem rgba(0, 0, 0, .8);
+    transition: all 0.3s ease;
+}
+
+.hero__right__text a:hover {
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+
+.socials {
+    text-align: right;
+}
+
+.socials a svg {
+    color: #fff;
+    fill: #fff;
+    position: relative;
+    /* font-size: 1.8rem; */
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.socials a:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.socials a:nth-child(2) {
+    margin-left: 2.4rem;
+}
+
+
+.socials a svg:hover{
+    fill: var(--Soft-Magenta);
+} 
+
+
+footer.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+footer.attribution a {
+    color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+    .hero__left__img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socials {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero__right__text h1 {
+        line-height: 1.5;
+        font-size: 2.6rem;
+    }
+
+    .hero__right__text a {
+        padding: 1rem 7rem;
+    }
+
+    footer.attribution {
+        display: none;
+    }
+}
