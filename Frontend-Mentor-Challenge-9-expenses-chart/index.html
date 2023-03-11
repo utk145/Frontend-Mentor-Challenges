@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- 
+  My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month -->
+
+
+
+  <main>
+    <section class="top-section">
+      <div class="balance">
+        <p>My balance</p>
+        <h1>$921.48</h1>
+      </div>
+      <img src="./images/logo.svg" alt="logo">
+    </section>
+    <section class="botttom-section">
+      <h1>Spending - Last 7 days</h1>
+      <canvas id="chart"></canvas>
+      <div class="separator"></div>
+      <div class="total">
+        <div class="this__month">
+          <p>Total this month</p>
+          <h2>$478.33</h2>
+        </div>
+        <div class="last__month">
+          <p>+2.4%</p>
+          <p>from last month</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="./script.js"></script>
+
+  <!-- Notes:
+     The HTML Canvas is a rectangular area on a web page where you can use JavaScript code to draw graphics, create animations, and build interactive applications. The Canvas element is part of HTML5 and can be used to create dynamic, interactive user interfaces and visualizations.
+    To use the Canvas element, you first need to create it in your HTML file using the <canvas> tag. Then, you can use JavaScript code to draw shapes, lines, and text on the canvas using various methods such as fillRect(), strokeRect(), arc(), etc. You can also animate the canvas using requestAnimationFrame() and create interactive elements by listening to user events such as clicks, mouse movements, and keyboard inputs.
+    The Canvas API provides a wide range of features for creating complex and dynamic graphics, and it's widely used in web development to create games, data visualizations, and other interactive applications.
+    -->
+
+</body>
+
+</html>
