@@ -1,0 +1,27 @@
+
+
+@mixin flex($flow: row nowrap, $justify: center, $align: center) {
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mq($breakpoint, $feature: width) {
+    @if $feature == 'width' {
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+    @else if $feature == 'height' {
+        @media screen and (min-height: $breakpoint) {
+            @content;
+        }
+    }
+}
