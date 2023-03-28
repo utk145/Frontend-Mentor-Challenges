@@ -4,4 +4,4 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 
 ### Link
-- Live Site URL: [Check it out here](http://utproj.rf.gd/frontend-mentor-challenge10-expensechart/)
+ [Check it out here](https://frontend-mentor-challenge10-nft.surge.sh/)
