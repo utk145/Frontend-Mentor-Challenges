@@ -10,13 +10,15 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
-## My Workinga
+## My Workings
 
 - Followed mobile first approach
 - Used modern html tags
 - Used tailwindcss for robustness
 - Design perfect
 
+## Deployment
+Here is my depployed link https://frontend-mentor-challenge11-fylo.pages.dev/
 
 ## The challenge
 
